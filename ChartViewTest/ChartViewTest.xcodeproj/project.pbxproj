@@ -1,0 +1,372 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C3CFFFCA267B6C4A00282AF5 /* ChartViewTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CFFFC9267B6C4A00282AF5 /* ChartViewTestApp.swift */; };
+		C3CFFFCC267B6C4A00282AF5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CFFFCB267B6C4A00282AF5 /* ContentView.swift */; };
+		C3CFFFCE267B6C4E00282AF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3CFFFCD267B6C4E00282AF5 /* Assets.xcassets */; };
+		C3CFFFD1267B6C4E00282AF5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3CFFFD0267B6C4E00282AF5 /* Preview Assets.xcassets */; };
+		C3CFFFDA267B6DE500282AF5 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = C3CFFFD9267B6DE500282AF5 /* SwiftUICharts */; };
+		C3CFFFDC267C85F700282AF5 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CFFFDB267C85F700282AF5 /* ViewModel.swift */; };
+		C3CFFFDE267C861600282AF5 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CFFFDD267C861600282AF5 /* Item.swift */; };
+		C3CFFFE0267C913E00282AF5 /* DateItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CFFFDF267C913E00282AF5 /* DateItem.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C3CFFFC6267B6C4A00282AF5 /* ChartViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3CFFFC9267B6C4A00282AF5 /* ChartViewTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewTestApp.swift; sourceTree = "<group>"; };
+		C3CFFFCB267B6C4A00282AF5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C3CFFFCD267B6C4E00282AF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3CFFFD0267B6C4E00282AF5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C3CFFFD2267B6C4E00282AF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3CFFFDB267C85F700282AF5 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		C3CFFFDD267C861600282AF5 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		C3CFFFDF267C913E00282AF5 /* DateItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateItem.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3CFFFC3267B6C4A00282AF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3CFFFDA267B6DE500282AF5 /* SwiftUICharts in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3CFFFBD267B6C4A00282AF5 = {
+			isa = PBXGroup;
+			children = (
+				C3CFFFC8267B6C4A00282AF5 /* ChartViewTest */,
+				C3CFFFC7267B6C4A00282AF5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3CFFFC7267B6C4A00282AF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3CFFFC6267B6C4A00282AF5 /* ChartViewTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3CFFFC8267B6C4A00282AF5 /* ChartViewTest */ = {
+			isa = PBXGroup;
+			children = (
+				C3CFFFC9267B6C4A00282AF5 /* ChartViewTestApp.swift */,
+				C3CFFFCB267B6C4A00282AF5 /* ContentView.swift */,
+				C3CFFFCD267B6C4E00282AF5 /* Assets.xcassets */,
+				C3CFFFD2267B6C4E00282AF5 /* Info.plist */,
+				C3CFFFCF267B6C4E00282AF5 /* Preview Content */,
+				C3CFFFDB267C85F700282AF5 /* ViewModel.swift */,
+				C3CFFFDD267C861600282AF5 /* Item.swift */,
+				C3CFFFDF267C913E00282AF5 /* DateItem.swift */,
+			);
+			path = ChartViewTest;
+			sourceTree = "<group>";
+		};
+		C3CFFFCF267B6C4E00282AF5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C3CFFFD0267B6C4E00282AF5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3CFFFC5267B6C4A00282AF5 /* ChartViewTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3CFFFD5267B6C4E00282AF5 /* Build configuration list for PBXNativeTarget "ChartViewTest" */;
+			buildPhases = (
+				C3CFFFC2267B6C4A00282AF5 /* Sources */,
+				C3CFFFC3267B6C4A00282AF5 /* Frameworks */,
+				C3CFFFC4267B6C4A00282AF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChartViewTest;
+			packageProductDependencies = (
+				C3CFFFD9267B6DE500282AF5 /* SwiftUICharts */,
+			);
+			productName = ChartViewTest;
+			productReference = C3CFFFC6267B6C4A00282AF5 /* ChartViewTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3CFFFBE267B6C4A00282AF5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					C3CFFFC5267B6C4A00282AF5 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = C3CFFFC1267B6C4A00282AF5 /* Build configuration list for PBXProject "ChartViewTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3CFFFBD267B6C4A00282AF5;
+			packageReferences = (
+				C3CFFFD8267B6DE500282AF5 /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
+			productRefGroup = C3CFFFC7267B6C4A00282AF5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3CFFFC5267B6C4A00282AF5 /* ChartViewTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3CFFFC4267B6C4A00282AF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3CFFFD1267B6C4E00282AF5 /* Preview Assets.xcassets in Resources */,
+				C3CFFFCE267B6C4E00282AF5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3CFFFC2267B6C4A00282AF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3CFFFCC267B6C4A00282AF5 /* ContentView.swift in Sources */,
+				C3CFFFDC267C85F700282AF5 /* ViewModel.swift in Sources */,
+				C3CFFFCA267B6C4A00282AF5 /* ChartViewTestApp.swift in Sources */,
+				C3CFFFE0267C913E00282AF5 /* DateItem.swift in Sources */,
+				C3CFFFDE267C861600282AF5 /* Item.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C3CFFFD3267B6C4E00282AF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C3CFFFD4267B6C4E00282AF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3CFFFD6267B6C4E00282AF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ChartViewTest/Preview Content\"";
+				DEVELOPMENT_TEAM = 8VL2637SNM;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ChartViewTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = uk.org.passback.ChartViewTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C3CFFFD7267B6C4E00282AF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ChartViewTest/Preview Content\"";
+				DEVELOPMENT_TEAM = 8VL2637SNM;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ChartViewTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = uk.org.passback.ChartViewTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3CFFFC1267B6C4A00282AF5 /* Build configuration list for PBXProject "ChartViewTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3CFFFD3267B6C4E00282AF5 /* Debug */,
+				C3CFFFD4267B6C4E00282AF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3CFFFD5267B6C4E00282AF5 /* Build configuration list for PBXNativeTarget "ChartViewTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3CFFFD6267B6C4E00282AF5 /* Debug */,
+				C3CFFFD7267B6C4E00282AF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C3CFFFD8267B6DE500282AF5 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C3CFFFD9267B6DE500282AF5 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3CFFFD8267B6DE500282AF5 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C3CFFFBE267B6C4A00282AF5 /* Project object */;
+}
