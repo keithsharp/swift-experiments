@@ -7,10 +7,12 @@
 
 import SwiftUI
 import MapKit
+import GreatCircle
 
 struct MapView: UIViewRepresentable {
     
     var route: [CLLocationCoordinate2D]
+    var distance: CLLocationDistance = 600000.0 // Meters == 600km
     
     class Coordinator: NSObject, MKMapViewDelegate {
         var parent: MapView
@@ -21,7 +23,7 @@ struct MapView: UIViewRepresentable {
         
         func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
             let routeRenderer = MKPolylineRenderer(overlay: overlay)
-            routeRenderer.strokeColor = .red
+            routeRenderer.strokeColor = .blue
             routeRenderer.lineWidth = 5
             return routeRenderer
         }
@@ -34,6 +36,11 @@ struct MapView: UIViewRepresentable {
         let routeLine = MKPolyline(coordinates: route, count: route.count)
         mapView.addOverlay(routeLine)
         
+        let currentLocation = MKPointAnnotation()
+        currentLocation.title = "You are here!"
+        currentLocation.coordinate = calculateCurrentLocation()
+        mapView.addAnnotation(currentLocation)
+        
         return mapView
     }
     
@@ -43,6 +50,35 @@ struct MapView: UIViewRepresentable {
     
     func updateUIView(_ uiView: UIViewType, context: Context) {
         
+    }
+    
+    func calculateCurrentLocation() -> CLLocationCoordinate2D {
+        var cumulativeLength = 0.0
+        var remainingDistance = distance
+        
+        if distance <= 0.0 {
+            return route.first! // Crash if route is empty
+        }
+        
+        for i in 0..<(route.count - 1) {
+            let origin = CLLocation(latitude: route[i].latitude, longitude: route[i].longitude)
+            let next = CLLocation(latitude: route[i + 1].latitude, longitude: route[i + 1].longitude)
+            
+            let segmentLength = origin.distanceTo(otherLocation: next)
+            cumulativeLength += segmentLength
+
+            if distance >= cumulativeLength {
+                remainingDistance -= segmentLength
+                continue
+            }
+            
+            let bearing = origin.initialBearingTo(otherLocation: next)
+            let location = origin.locationWith(bearing: bearing, distance: remainingDistance)
+            
+            return location.coordinate
+        }
+        
+        return route.last! // Crash if route is empty
     }
 }
 

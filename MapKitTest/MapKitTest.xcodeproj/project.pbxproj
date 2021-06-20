@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		C3B37A27267F36A400178A23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3B37A26267F36A400178A23 /* Preview Assets.xcassets */; };
 		C3B37A2F267F370500178A23 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B37A2E267F370500178A23 /* MapView.swift */; };
 		C3B37A31267F3A4300178A23 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B37A30267F3A4300178A23 /* ViewModel.swift */; };
+		C3B37A34267F40F100178A23 /* GreatCircle in Frameworks */ = {isa = PBXBuildFile; productRef = C3B37A33267F40F100178A23 /* GreatCircle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3B37A34267F40F100178A23 /* GreatCircle in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +93,9 @@
 			dependencies = (
 			);
 			name = MapKitTest;
+			packageProductDependencies = (
+				C3B37A33267F40F100178A23 /* GreatCircle */,
+			);
 			productName = MapKitTest;
 			productReference = C3B37A1C267F36A300178A23 /* MapKitTest.app */;
 			productType = "com.apple.product-type.application";
@@ -118,6 +123,9 @@
 				Base,
 			);
 			mainGroup = C3B37A13267F36A300178A23;
+			packageReferences = (
+				C3B37A32267F40F100178A23 /* XCRemoteSwiftPackageReference "GreatCircle" */,
+			);
 			productRefGroup = C3B37A1D267F36A300178A23 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -336,6 +344,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C3B37A32267F40F100178A23 /* XCRemoteSwiftPackageReference "GreatCircle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/keithsharp/GreatCircle";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C3B37A33267F40F100178A23 /* GreatCircle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3B37A32267F40F100178A23 /* XCRemoteSwiftPackageReference "GreatCircle" */;
+			productName = GreatCircle;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C3B37A14267F36A300178A23 /* Project object */;
 }
