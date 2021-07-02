@@ -11,6 +11,9 @@
 		C323A57F268F05B200B83620 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C323A57E268F05B200B83620 /* ViewController.swift */; };
 		C323A581268F05B400B83620 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C323A580268F05B400B83620 /* Assets.xcassets */; };
 		C323A584268F05B400B83620 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C323A582268F05B400B83620 /* Main.storyboard */; };
+		C323A58D268F062B00B83620 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C323A58C268F062B00B83620 /* CanvasView.swift */; };
+		C323A58F268F16D100B83620 /* CanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C323A58E268F16D100B83620 /* CanvasViewController.swift */; };
+		C323A591268F1BAC00B83620 /* NSBezierPath+cgPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = C323A590268F1BAC00B83620 /* NSBezierPath+cgPath.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		C323A583268F05B400B83620 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C323A585268F05B400B83620 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C323A586268F05B400B83620 /* MacDrawingTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacDrawingTest.entitlements; sourceTree = "<group>"; };
+		C323A58C268F062B00B83620 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		C323A58E268F16D100B83620 /* CanvasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasViewController.swift; sourceTree = "<group>"; };
+		C323A590268F1BAC00B83620 /* NSBezierPath+cgPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSBezierPath+cgPath.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,9 @@
 				C323A582268F05B400B83620 /* Main.storyboard */,
 				C323A585268F05B400B83620 /* Info.plist */,
 				C323A586268F05B400B83620 /* MacDrawingTest.entitlements */,
+				C323A58C268F062B00B83620 /* CanvasView.swift */,
+				C323A58E268F16D100B83620 /* CanvasViewController.swift */,
+				C323A590268F1BAC00B83620 /* NSBezierPath+cgPath.swift */,
 			);
 			path = MacDrawingTest;
 			sourceTree = "<group>";
@@ -132,8 +141,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C323A58F268F16D100B83620 /* CanvasViewController.swift in Sources */,
 				C323A57F268F05B200B83620 /* ViewController.swift in Sources */,
 				C323A57D268F05B200B83620 /* AppDelegate.swift in Sources */,
+				C323A58D268F062B00B83620 /* CanvasView.swift in Sources */,
+				C323A591268F1BAC00B83620 /* NSBezierPath+cgPath.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
