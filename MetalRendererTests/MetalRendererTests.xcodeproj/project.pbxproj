@@ -13,6 +13,10 @@
 		C37AB9A32695B85C00532026 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37AB9A22695B85C00532026 /* SplitViewController.swift */; };
 		C37AB9A52695B89200532026 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37AB9A42695B89200532026 /* OptionsViewController.swift */; };
 		C37AB9AB2695B8D700532026 /* MetalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37AB9AA2695B8D700532026 /* MetalViewController.swift */; };
+		C37AB9AD2696E5F000532026 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37AB9AC2696E5F000532026 /* Renderer.swift */; };
+		C37AB9AF2696E7F100532026 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = C37AB9AE2696E7F100532026 /* Shaders.metal */; };
+		C37AB9B12696EC5D00532026 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37AB9B02696EC5D00532026 /* WindowController.swift */; };
+		C37AB9B32696EEE000532026 /* Cube.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37AB9B22696EEE000532026 /* Cube.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,10 @@
 		C37AB9A22695B85C00532026 /* SplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
 		C37AB9A42695B89200532026 /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
 		C37AB9AA2695B8D700532026 /* MetalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalViewController.swift; sourceTree = "<group>"; };
+		C37AB9AC2696E5F000532026 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		C37AB9AE2696E7F100532026 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		C37AB9B02696EC5D00532026 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		C37AB9B22696EEE000532026 /* Cube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cube.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +70,13 @@
 				C37AB9982695B7DC00532026 /* Main.storyboard */,
 				C37AB99B2695B7DC00532026 /* Info.plist */,
 				C37AB99C2695B7DC00532026 /* MetalRendererTests.entitlements */,
+				C37AB9B02696EC5D00532026 /* WindowController.swift */,
 				C37AB9A22695B85C00532026 /* SplitViewController.swift */,
 				C37AB9A42695B89200532026 /* OptionsViewController.swift */,
 				C37AB9AA2695B8D700532026 /* MetalViewController.swift */,
+				C37AB9AC2696E5F000532026 /* Renderer.swift */,
+				C37AB9AE2696E7F100532026 /* Shaders.metal */,
+				C37AB9B22696EEE000532026 /* Cube.swift */,
 			);
 			path = MetalRendererTests;
 			sourceTree = "<group>";
@@ -138,9 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C37AB9AF2696E7F100532026 /* Shaders.metal in Sources */,
 				C37AB9A52695B89200532026 /* OptionsViewController.swift in Sources */,
 				C37AB9932695B7DB00532026 /* AppDelegate.swift in Sources */,
+				C37AB9B12696EC5D00532026 /* WindowController.swift in Sources */,
+				C37AB9B32696EEE000532026 /* Cube.swift in Sources */,
 				C37AB9AB2695B8D700532026 /* MetalViewController.swift in Sources */,
+				C37AB9AD2696E5F000532026 /* Renderer.swift in Sources */,
 				C37AB9A32695B85C00532026 /* SplitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
