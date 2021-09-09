@@ -24,7 +24,7 @@ struct ContentView: View {
             .tabItem { Label("List", systemImage: "list.bullet") }
             
             Map(coordinateRegion: $region, annotationItems: places) { place in
-                MapAnnotation(coordinate: CLLocationCoordinate2D(latitude: place.latitude, longitude: place.longitude)) {
+                MapAnnotation(coordinate: place.coordinate) {
                     Circle()
                         .strokeBorder(place.tapped ? Color.green : Color.gray, lineWidth: 4)
                         .frame(width: 40, height: 40)

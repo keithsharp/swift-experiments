@@ -13,6 +13,8 @@
 		C307F45726EA3DA2002391E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C307F45626EA3DA2002391E8 /* Preview Assets.xcassets */; };
 		C307F46026EA3E49002391E8 /* Places.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C307F45E26EA3E49002391E8 /* Places.xcdatamodeld */; };
 		C307F46226EA3E9F002391E8 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C307F46126EA3E9F002391E8 /* PersistenceController.swift */; };
+		C307F46D26EA50AF002391E8 /* Place+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C307F46B26EA50AF002391E8 /* Place+CoreDataClass.swift */; };
+		C307F46E26EA50AF002391E8 /* Place+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C307F46C26EA50AF002391E8 /* Place+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		C307F45826EA3DA2002391E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C307F45F26EA3E49002391E8 /* Places.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Places.xcdatamodel; sourceTree = "<group>"; };
 		C307F46126EA3E9F002391E8 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		C307F46B26EA50AF002391E8 /* Place+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Place+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		C307F46C26EA50AF002391E8 /* Place+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Place+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +60,9 @@
 		C307F44E26EA3DA0002391E8 /* CoreDataTest */ = {
 			isa = PBXGroup;
 			children = (
+				C307F46A26EA508F002391E8 /* Core Data */,
 				C307F44F26EA3DA0002391E8 /* CoreDataTestApp.swift */,
 				C307F45126EA3DA0002391E8 /* ContentView.swift */,
-				C307F46126EA3E9F002391E8 /* PersistenceController.swift */,
 				C307F45E26EA3E49002391E8 /* Places.xcdatamodeld */,
 				C307F45326EA3DA2002391E8 /* Assets.xcassets */,
 				C307F45826EA3DA2002391E8 /* Info.plist */,
@@ -73,6 +77,16 @@
 				C307F45626EA3DA2002391E8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C307F46A26EA508F002391E8 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				C307F46126EA3E9F002391E8 /* PersistenceController.swift */,
+				C307F46B26EA50AF002391E8 /* Place+CoreDataClass.swift */,
+				C307F46C26EA50AF002391E8 /* Place+CoreDataProperties.swift */,
+			);
+			path = "Core Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +158,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C307F46D26EA50AF002391E8 /* Place+CoreDataClass.swift in Sources */,
+				C307F46E26EA50AF002391E8 /* Place+CoreDataProperties.swift in Sources */,
 				C307F45226EA3DA0002391E8 /* ContentView.swift in Sources */,
 				C307F45026EA3DA0002391E8 /* CoreDataTestApp.swift in Sources */,
 				C307F46026EA3E49002391E8 /* Places.xcdatamodeld in Sources */,
