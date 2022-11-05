@@ -27,6 +27,60 @@ struct MapView: UIViewRepresentable {
             routeRenderer.lineWidth = 5
             return routeRenderer
         }
+        
+        func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+            guard let annotation = annotation as? LocationAnnotation else { return  nil }
+
+            var view = mapView.dequeueReusableAnnotationView(withIdentifier: NSStringFromClass(LocationAnnotationView.self), for: annotation) as? LocationAnnotationView
+            
+            if view == nil {
+                view = LocationAnnotationView(annotation: annotation, reuseIdentifier: NSStringFromClass(LocationAnnotationView.self))
+            }
+            
+            return view
+        }
+        
+        func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+            guard let annotation = view.annotation as? LocationAnnotation else {
+                print("Wrong type of annotation!")
+                return
+            }
+            print("Tapped annotation with ID: \(annotation.id)")
+        }
+    }
+    
+    class LocationAnnotation: NSObject, MKAnnotation {
+        let id = UUID()
+        var coordinate: CLLocationCoordinate2D
+        var title: String?
+        var subtitle: String?
+        
+        init(coordinate: CLLocationCoordinate2D, title: String) {
+            self.coordinate = coordinate
+            self.title = title
+            self.subtitle = "Yes you really are."
+        }
+    }
+    
+    class LocationAnnotationView: MKMarkerAnnotationView {
+
+        override init(annotation: MKAnnotation?, reuseIdentifier: String?) {
+            super.init(annotation: annotation, reuseIdentifier: reuseIdentifier)
+
+            titleVisibility = .hidden
+            canShowCallout = true
+            let btn = UIButton(type: .detailDisclosure)
+            rightCalloutAccessoryView = btn
+        }
+
+        required init?(coder aDecoder: NSCoder) {
+            fatalError("init(coder:) has not been implemented")
+        }
+        
+        override func prepareForDisplay() {
+            super.prepareForDisplay()
+            
+        }
     }
     
     func makeUIView(context: Context) -> some UIView {
@@ -36,10 +90,9 @@ struct MapView: UIViewRepresentable {
         let routeLine = MKPolyline(coordinates: route, count: route.count)
         mapView.addOverlay(routeLine)
         
-        let currentLocation = MKPointAnnotation()
-        currentLocation.title = "You are here!"
-        currentLocation.coordinate = calculateCurrentLocation()
-        mapView.addAnnotation(currentLocation)
+        mapView.register(LocationAnnotationView.self, forAnnotationViewWithReuseIdentifier: NSStringFromClass(LocationAnnotationView.self))
+        let annotation = LocationAnnotation(coordinate: calculateCurrentLocation(), title: "You are here!")
+        mapView.addAnnotation(annotation)
         
         return mapView
     }
