@@ -17,6 +17,8 @@
 		C37AB9AF2696E7F100532026 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = C37AB9AE2696E7F100532026 /* Shaders.metal */; };
 		C37AB9B12696EC5D00532026 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37AB9B02696EC5D00532026 /* WindowController.swift */; };
 		C37AB9B32696EEE000532026 /* Cube.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37AB9B22696EEE000532026 /* Cube.swift */; };
+		C37AB9B52696F65A00532026 /* simd+matrices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37AB9B42696F65A00532026 /* simd+matrices.swift */; };
+		C37AB9B72696FAD200532026 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37AB9B62696FAD200532026 /* Camera.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		C37AB9AE2696E7F100532026 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
 		C37AB9B02696EC5D00532026 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 		C37AB9B22696EEE000532026 /* Cube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cube.swift; sourceTree = "<group>"; };
+		C37AB9B42696F65A00532026 /* simd+matrices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "simd+matrices.swift"; sourceTree = "<group>"; };
+		C37AB9B62696FAD200532026 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,11 +74,13 @@
 				C37AB9982695B7DC00532026 /* Main.storyboard */,
 				C37AB99B2695B7DC00532026 /* Info.plist */,
 				C37AB99C2695B7DC00532026 /* MetalRendererTests.entitlements */,
+				C37AB9B42696F65A00532026 /* simd+matrices.swift */,
 				C37AB9B02696EC5D00532026 /* WindowController.swift */,
 				C37AB9A22695B85C00532026 /* SplitViewController.swift */,
 				C37AB9A42695B89200532026 /* OptionsViewController.swift */,
 				C37AB9AA2695B8D700532026 /* MetalViewController.swift */,
 				C37AB9AC2696E5F000532026 /* Renderer.swift */,
+				C37AB9B62696FAD200532026 /* Camera.swift */,
 				C37AB9AE2696E7F100532026 /* Shaders.metal */,
 				C37AB9B22696EEE000532026 /* Cube.swift */,
 			);
@@ -156,6 +162,8 @@
 				C37AB9B12696EC5D00532026 /* WindowController.swift in Sources */,
 				C37AB9B32696EEE000532026 /* Cube.swift in Sources */,
 				C37AB9AB2695B8D700532026 /* MetalViewController.swift in Sources */,
+				C37AB9B72696FAD200532026 /* Camera.swift in Sources */,
+				C37AB9B52696F65A00532026 /* simd+matrices.swift in Sources */,
 				C37AB9AD2696E5F000532026 /* Renderer.swift in Sources */,
 				C37AB9A32695B85C00532026 /* SplitViewController.swift in Sources */,
 			);

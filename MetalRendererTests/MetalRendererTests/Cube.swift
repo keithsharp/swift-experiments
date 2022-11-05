@@ -18,6 +18,12 @@ class Cube {
     let pipelineState: MTLRenderPipelineState
     
     var position = SIMD3<Float>(0.0, 0.0, 0.0)
+    var rotation = SIMD3<Float>(0.0, 0.0, 0.0)
+    var scale = SIMD3<Float>(1.0, 1.0, 1.0)
+    
+    var modelMatrix: matrix_float4x4 {
+        return matrix_float4x4(scale: scale) * matrix_float4x4(rotation: rotation) * matrix_float4x4(translation: position)
+    }
     
     init() {
         let allocator = MTKMeshBufferAllocator(device: Renderer.device)
